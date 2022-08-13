@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>if练习3</title>
+	<script type="text/javascript">
+		/*
+		 * 	编写程序，由键盘输入三个整数分别存入变量num1、num2、num3，
+		 * 	对他们进行排序，并且从小到大输出。
+		 */
+		var num1 = +prompt("请输入第1个数字：");
+		var num2 = +prompt("请输入第2个数字：");
+		var num3 = +prompt("请输入第3个数字：");
+
+		const arr = [num1, num2, num3];
+
+		for (let idx in arr) {
+			if (arr[idx] > arr[idx + 1]) {
+				const flag = arr[idx + 1];
+				arr[idx + 1] = arr[idx];
+				arr[idx] = flag;
+			}
+		}
+		console.log(arr);
+
+
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

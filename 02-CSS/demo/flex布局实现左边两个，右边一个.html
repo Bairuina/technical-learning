@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .block {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+
+        .box2 {
+            display: flex;
+            width: 600px;
+        }
+
+        .block2-1,
+        .block2-2,
+        .block2-3 {
+            height: 100px;
+            width: 100px;
+
+        }
+
+        .block2-1 {
+            flex-grow: 1;
+            background-color: rgb(255, 69, 1);
+        }
+
+        .block2-2 {
+            flex-grow: 2;
+            background-color: rgb(131, 130, 130);
+        }
+
+        .block2-3 {
+            flex-grow: 3;
+            background-color: rgb(231, 148, 93);
+        }
+
+        .box3 {
+            display: flex;
+            width: 300px;
+        }
+
+        .block3-1,
+        .block3-2,
+        .block3-3 {
+            height: 100px;
+            width: 200px;
+        }
+
+        .block3-1 {
+            flex-shrink: 1;
+            background-color: rgb(255, 69, 1);
+        }
+
+        .block3-2 {
+            flex-shrink: 2;
+            background-color: rgb(131, 130, 130);
+        }
+
+        .block3-3 {
+            flex-shrink: 3;
+            background-color: rgb(231, 148, 93);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="block">
+        </div>
+        <div class="block">
+        </div>
+        <div class="block" style="margin-left: auto;">
+        </div>
+    </div>
+    <!-- flex-grow 将剩余空间按照比例分给元素 -->
+    <div class="box2">
+        <div class="block2-1">
+        </div>
+        <div class="block2-2">
+        </div>
+        <div class="block2-3">
+        </div>
+    </div>
+    <!-- flex-shrink 将超出空间按照比例分给元素，每个元素减去占比的宽度 -->
+    <div class="box3">
+        <div class="block3-1">
+        </div>
+        <div class="block3-2">
+        </div>
+        <div class="block3-3">
+        </div>
+    </div>
+</body>
+
+</html>
